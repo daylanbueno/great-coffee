@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62%;
+  font-family: "Manrope";
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  background-image: url("./assets/blur-1.png");
+  background-color: #000000;
+  color: var(--text-color);
+}
+
+
+.logo-mobile {
+  display: none;
+}
+
+.header-mobile {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 20rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.02em;
+}
+header .mobile-title {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+header button,
+.btn-pegar-meu-cafe {
+  width: 172px;
+  height: 37px;
+  border: 1px solid #8257e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 87%;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 100%;
+}
+
+header nav ul li {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 87%;
+}
+
+header nav ul li:hover {
+  opacity: 100%;
+}
+
+.menu-burgue-open {
+  display: none;
+}
+
+.menu-burgue-close {
+  display: none;
+}
+
+main {
+  padding: 50px 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-main h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 109px;
+  letter-spacing: -0.03em;
+}
+
+/*=======responsive================*/
+@media (max-width: 1024px) {
+  header {
+    padding: 40px 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background-image: url("./assets/blur-mobile.png");
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: flex;
+  }
+
+  .menu-burgue-close {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header button {
+    display: none;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #mobile-title {
+    display: flex;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  main img {
+    width: 428px;
+  }
+
+  .header-mobile {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-mobile h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  .content-main h1 {
+    font-size: 5rem;
+  }
+
+  .content-main img {
+    width: 100%;
+  }
+
+  .content-main {
+    width: 346px;
+  }
+}
