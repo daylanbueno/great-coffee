@@ -20,7 +20,7 @@
             <img src="./assets/logo-desktop.svg" alt="Logo great coffe">
         </div>
         <div class="logo-mobile">
-            <img src="./assets/logo-desktop.svg" alt="Logo great coffe">
+            <img class="logo-mobile" src="./assets/logo-desktop.svg" alt="Logo great coffe">
             <h1>Rockeseat</h1>
         </div>
         <nav>
@@ -34,9 +34,7 @@
         </nav>
 
         <button class="btn-pegar-meu-cafe">PEGAR MEU CAFÉ</button>
-
-        <img class="menu-burgue-open" src="./assets/menu-buguer-close.svg" alt="menu fechado">
-        <img class="menu-burgue-close" src="./assets/menu-buguer-open.svg" alt="meu aberto">
+        <img onclick="Modal.toggle()" class="menu-burgue-close" src="./assets/menu-buguer-open.svg" alt="meu aberto">
 
     </header>
     <main>
@@ -52,7 +50,28 @@
         </section>
         <img src="./assets/rocket-coffee.png" alt="Imagem rocket coffee" class="image-coffee">
     </main>
-    <script></script>
+
+    <div class="modal-burger">
+        <header class="header-modal">
+            <div>
+                <img class="logo-mobile" src="./assets/logo-desktop.svg" alt="Logo great coffe">
+                <h1>Rockeseat</h1>
+            </div>
+            <img onclick="Modal.toggle()" class="menu-burgue-open" src="./assets/menu-buguer-close.svg"
+                alt="menu fechado">
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Recompensas</li>
+                <li>Gift Cards</li>
+                <li>Lojas</li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

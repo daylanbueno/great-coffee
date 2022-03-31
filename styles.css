@@ -23,7 +23,6 @@ body {
   color: var(--text-color);
 }
 
-
 .logo-mobile {
   display: none;
 }
@@ -43,6 +42,7 @@ header {
   line-height: 1.9rem;
   letter-spacing: 0.02em;
 }
+
 header .mobile-title {
   display: none;
 }
@@ -139,6 +139,7 @@ main {
   .logo-desktop {
     display: none;
   }
+
   .logo-mobile {
     display: flex;
   }
@@ -151,7 +152,7 @@ main {
     display: flex;
     width: auto;
     justify-content: space-between;
-    padding: 40px 30px;
+    padding: 30px 20px;
   }
 
   header nav ul {
@@ -161,10 +162,11 @@ main {
   header button {
     display: none;
   }
+
   header div {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   #mobile-title {
@@ -207,4 +209,54 @@ main {
   .content-main {
     width: 346px;
   }
+}
+
+/** Resonsive ******************************/
+.modal-burger {
+  display:none;
+  background: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.menu-burgue-open {
+  display: block;
+}
+
+.header-modal {
+  display: flex;
+}
+
+.logo-mobile {
+  width: 22.09px;
+  height: 28px;
+}
+
+.modal-burger nav {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #a8a8b3;
+}
+
+.modal-burger nav ul li {
+  border: 1px solid #29292E;
+  padding:17px 30px;
+}
+
+.modal-burger nav ul li:hover {
+  border-left: 4px solid #8257e5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-burger.active {
+  opacity: 1;
+  display: block;
 }
