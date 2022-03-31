@@ -21,6 +21,7 @@ body {
   background-image: url("./assets/blur-1.png");
   background-color: #000000;
   color: var(--text-color);
+  border: 1px solid #ffffff;
 }
 
 
@@ -63,7 +64,7 @@ header button,
   background: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 11px;
+  font-size: 1.1rem;
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -123,7 +124,6 @@ main {
 
 @media (max-width: 768px) {
   header {
-    width: 100%;
     padding: 40px 60px;
   }
 }
